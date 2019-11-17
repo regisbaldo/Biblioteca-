@@ -1,0 +1,14 @@
+*livraria
+*livros
+*autores
+*editoras
+*comentários nos livros
+*curtidas nos livros
+*relatorio de comentários e curtidas 
+*usando vue
+*api e validação via token
+*telescope
+*pasaport para validações em api
+*migration
+*seeds
+*factory seeds
