@@ -18,17 +18,17 @@ Route::get('/', function () {
 Auth::routes();
 
 
-
-Route::get('teste', function(){
-dd(config('env.app_name'), env('app_name'));
-});
-Route::get('/book', 'BookController@index')->name('b');
-Route::get('/book/create', 'BookController@create')->name('bC');
 Route::get('/ph', 'PublishingHouseController@index')->name('pb');
 Route::get('/ph/create', 'PublishingHouseController@create')->name('pbC');
 
 Route::get('/author', 'AuthorController@index')->name('a');
 Route::get('/author/create', 'AuthorController@create')->name('aC');
+
+Route::get('/book', 'BookController@index')->name('b');
+Route::get('/book/create', 'BookController@create')->name('bC');
+
+Route::get('/comment', 'CommentController@index')->name('c');
+Route::get('/comment/create', 'CommentController@create')->name('cC');
 
 
 Route::get('/home', 'HomeController@index')->name('home');
